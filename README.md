@@ -16,3 +16,18 @@ for **Asian option** prices (and related quantities), focusing on the **short-ma
 
 ---
 
+## Usage
+
+This repository provides a single entry-point program for reproducing the numerical results in the paper.
+
+1. Download (or clone) this repository.
+2. Compile and run `simulation_3.cpp`.
+3. The program generates the following output files:
+   - `output_table1(heston).csv` (Table 1: Heston model)
+   - `output_table2(SABR).csv` (Table 2: SABR model)
+
+### Compile & run (example)
+
+```bash
+g++ -std=c++17 simulation_3.cpp -o simulation_3
+./simulation_3
